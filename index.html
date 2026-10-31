@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164E45">
+  <meta name="description" content="Abarrotes y Cremería Libertad: productos frescos, básicos para tu hogar y pedidos fáciles por WhatsApp.">
+  <title>Abarrotes y Cremería Libertad | Cerca de ti, para tu hogar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            libertad: { forest: '#164E45', green: '#247A5A', mint: '#E8F3EB', cream: '#FFF9EF', gold: '#F2B544', ink: '#21312D', muted: '#65736D' }
+          },
+          fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Manrope', 'sans-serif'] },
+          boxShadow: { soft: '0 16px 48px rgba(22, 78, 69, .10)' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; }
+    .hero-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(36,122,90,.08) 1px, transparent 0); background-size: 22px 22px; }
+    .milk-glow { background: radial-gradient(ellipse at center, rgba(255,255,255,.98) 0%, rgba(255,249,239,.86) 50%, rgba(232,243,235,.7) 100%); }
+    .nav-link { transition: color .2s ease; }
+    .nav-link:hover { color: #247A5A; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body class="bg-white text-libertad-ink antialiased">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-xl focus:bg-white focus:px-4 focus:py-3 focus:shadow-soft">Saltar al contenido</a>
+  <header class="sticky top-0 z-40 border-b border-libertad-forest/10 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex min-w-0 items-center gap-2.5" aria-label="Abarrotes y Cremería Libertad, inicio">
+        <svg class="h-11 w-11 shrink-0" viewBox="0 0 48 48" role="img" aria-label="Logo Libertad">
+          <rect x="2" y="2" width="44" height="44" rx="15" fill="#164E45"/>
+          <path d="M13 30.5c2.2-7.5 6.3-12.2 12.4-14.2 1.1 7.1-1.7 12.1-8.1 14.6 3.2.2 6.7-.7 10.4-2.9 2.4-1.4 4.7-3.6 6.9-6.7.1 7.3-3 12.4-9 15.1-5.4 2.4-10 .8-12.6-5.9Z" fill="#A8D9B9"/>
+          <circle cx="33.5" cy="14" r="3" fill="#F2B544"/>
+        </svg>
+        <span class="min-w-0 leading-tight">
+          <span class="block font-display text-sm font-extrabold tracking-tight text-libertad-forest sm:text-base">Libertad</span>
+          <span class="block text-[10px] font-semibold uppercase tracking-[.12em] text-libertad-muted sm:text-[11px]">Abarrotes y Cremería</span>
+        </span>
+      </a>
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Navegación principal">
+        <a class="nav-link text-sm font-semibold" href="#inicio">Inicio</a>
+        <a class="nav-link text-sm font-semibold" href="#categorias">Categorías</a>
+        <a class="nav-link text-sm font-semibold" href="#nosotros">Nosotros</a>
+        <a class="nav-link text-sm font-semibold" href="#contacto">Contacto</a>
+      </nav>
+      <a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden ayudar?" href="#" class="hidden min-h-11 items-center justify-center gap-2 rounded-full bg-libertad-forest px-5 text-sm font-bold text-white shadow-sm transition hover:bg-libertad-green focus:outline-none focus:ring-4 focus:ring-libertad-green/20 sm:inline-flex">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L.2 24l6.4-1.7a12 12 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.2 21.7a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.4c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.7 5.8 5.1c.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.7-.1 1.8-.8 2.1-1.5.3-.7.3-1.3.2-1.5s-.3-.2-.6-.4Z"/></svg>
+        Pedir por WhatsApp
+      </a>
+      <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-libertad-forest/15 text-libertad-forest md:hidden" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav id="mobileMenu" class="hidden border-t border-libertad-forest/10 bg-white px-4 py-3 md:hidden" aria-label="Navegación móvil">
+      <div class="mx-auto grid max-w-7xl gap-1">
+        <a class="rounded-lg px-3 py-3 text-sm font-semibold hover:bg-libertad-mint" href="#inicio">Inicio</a>
+        <a class="rounded-lg px-3 py-3 text-sm font-semibold hover:bg-libertad-mint" href="#categorias">Categorías</a>
+        <a class="rounded-lg px-3 py-3 text-sm font-semibold hover:bg-libertad-mint" href="#nosotros">Nosotros</a>
+        <a class="rounded-lg px-3 py-3 text-sm font-semibold hover:bg-libertad-mint" href="#contacto">Contacto</a>
+        <a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden ayudar?" href="#" class="mt-2 inline-flex min-h-12 items-center justify-center rounded-xl bg-libertad-forest px-4 font-bold text-white">Pedir por WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero-pattern relative overflow-hidden bg-libertad-cream">
+      <div class="absolute -right-28 -top-28 h-80 w-80 rounded-full bg-libertad-mint/80 blur-3xl" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
+        <div class="max-w-2xl">
+          <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-libertad-green/15 bg-white/80 px-3.5 py-2 text-xs font-bold uppercase tracking-[.12em] text-libertad-green"><span class="h-2 w-2 rounded-full bg-libertad-gold"></span>Tu tienda de confianza</span>
+          <h1 class="font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-libertad-forest sm:text-5xl lg:text-6xl">Lo que tu hogar necesita, <span class="text-libertad-green">cerca de ti.</span></h1>
+          <p class="mt-5 max-w-xl text-base leading-7 text-libertad-muted sm:text-lg sm:leading-8">Productos frescos de cremería, básicos de despensa y todo para mantener tu casa en orden. Haz tu pedido fácil y directo por WhatsApp.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me comparten el catálogo y me ayudan con mi compra?" href="#" class="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-full bg-libertad-forest px-7 text-base font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-libertad-green focus:outline-none focus:ring-4 focus:ring-libertad-green/20">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L.2 24l6.4-1.7a12 12 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Z"/></svg>
+              Hacer pedido por WhatsApp
+            </a>
+            <a href="#categorias" class="inline-flex min-h-14 items-center justify-center rounded-full border border-libertad-forest/20 bg-white/70 px-7 text-base font-bold text-libertad-forest transition hover:bg-white">Ver categorías</a>
+          </div>
+          <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-semibold text-libertad-muted">
+            <span class="inline-flex items-center gap-2"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-libertad-mint text-libertad-green">✓</span>Atención cercana</span>
+            <span class="inline-flex items-center gap-2"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-libertad-mint text-libertad-green">✓</span>Compra sencilla</span>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-xl">
+          <div class="milk-glow relative aspect-[1.08/1] overflow-hidden rounded-[2rem] border border-white shadow-soft sm:rounded-[2.5rem]">
+            <svg viewBox="0 0 560 500" class="absolute inset-0 h-full w-full" role="img" aria-label="Ilustración de una canasta con productos frescos y de despensa">
+              <defs><linearGradient id="bag" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#247A5A"/><stop offset="1" stop-color="#164E45"/></linearGradient><linearGradient id="cheese" x1="0" x2="1"><stop stop-color="#FFE49A"/><stop offset="1" stop-color="#F2B544"/></linearGradient></defs>
+              <circle cx="279" cy="250" r="178" fill="#E8F3EB"/>
+              <circle cx="425" cy="109" r="34" fill="#F2B544" opacity=".86"/>
+              <path d="M160 275c10-84 67-151 145-159 17 40 12 80-10 117-28 48-76 67-135 42Z" fill="#73AD76"/>
+              <path d="M174 270c44-56 82-96 134-140" fill="none" stroke="#E8F3EB" stroke-width="8" stroke-linecap="round"/>
+              <path d="M239 196c-3-29-16-48-39-60M277 158c17-22 36-32 60-30M214 231c-24-1-44 4-63 17" fill="none" stroke="#E8F3EB" stroke-width="6" stroke-linecap="round"/>
+              <path d="M327 202c9-45 36-68 80-70 8 42-9 69-52 82-9-4-18-8-28-12Z" fill="#A8D9B9"/>
+              <path d="M337 205c19-28 38-48 61-65" fill="none" stroke="#247A5A" stroke-width="5" stroke-linecap="round"/>
+              <path d="M172 261h218l-23 159c-2 15-14 26-29 26H224c-15 0-27-11-29-26l-23-159Z" fill="url(#bag)"/>
+              <path d="M213 270c3-54 27-82 67-82s64 28 67 82" fill="none" stroke="#164E45" stroke-width="18" stroke-linecap="round"/>
+              <path d="M205 292h153" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="4" stroke-dasharray="7 12"/>
+              <path d="m223 315 39-22 38 22v48h-77v-48Z" fill="url(#cheese)"/>
+              <circle cx="246" cy="329" r="4" fill="#E2A52C"/><circle cx="280" cy="343" r="4" fill="#E2A52C"/><circle cx="253" cy="353" r="3" fill="#E2A52C"/>
+              <rect x="309" y="302" width="30" height="63" rx="8" fill="#FFF9EF"/><rect x="315" y="294" width="18" height="13" rx="4" fill="#F2B544"/><path d="M315 324h18" stroke="#A8D9B9" stroke-width="5"/>
+              <rect x="190" y="225" width="38" height="65" rx="8" fill="#F2B544"/><path d="M199 241h20M199 250h20" stroke="#FFF9EF" stroke-width="4" stroke-linecap="round"/><rect x="200" y="218" width="18" height="10" rx="3" fill="#164E45"/>
+              <path d="M115 398h330" stroke="#164E45" stroke-opacity=".1" stroke-width="12" stroke-linecap="round"/>
+              <circle cx="416" cy="340" r="35" fill="#FFF9EF" stroke="#E8F3EB" stroke-width="5"/><path d="M401 339c8-15 23-17 31-2-3 13-12 21-23 23-8-5-11-12-8-21Z" fill="#73AD76"/><path d="M407 352c7-9 14-16 21-21" stroke="#E8F3EB" stroke-width="3" stroke-linecap="round"/>
+              <rect x="56" y="105" width="112" height="52" rx="18" fill="white"/><text x="112" y="137" text-anchor="middle" fill="#164E45" font-size="15" font-family="sans-serif" font-weight="700">Frescura diaria</text>
+              <rect x="375" y="397" width="126" height="52" rx="18" fill="white"/><text x="438" y="429" text-anchor="middle" fill="#164E45" font-size="15" font-family="sans-serif" font-weight="700">Hecho fácil</text>
+            </svg>
+          </div>
+          <div class="absolute -bottom-4 left-3 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-soft sm:-left-5 sm:px-5">
+            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-libertad-mint text-xl">🧀</span><span><span class="block text-xs font-semibold text-libertad-muted">Todo lo de tu lista</span><span class="block font-display text-sm font-extrabold text-libertad-forest">En un solo lugar</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="scroll-mt-24 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="text-xs font-bold uppercase tracking-[.16em] text-libertad-green">Catálogo</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight text-libertad-forest sm:text-4xl">Encuentra lo que buscas</h2>
+          <p class="mt-3 text-base leading-7 text-libertad-muted">Cuéntanos qué necesitas y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
+          <article class="group flex flex-col rounded-3xl border border-libertad-forest/10 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft sm:p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF3D7] text-3xl" aria-hidden="true">🧀</div>
+            <h3 class="mt-5 font-display text-xl font-extrabold text-libertad-forest">Cremería y Lácteos</h3><p class="mt-2 flex-1 text-sm leading-6 text-libertad-muted">Quesos, jamón, crema, yogur y más opciones frescas para tu mesa.</p>
+            <a data-wa data-message="¡Hola! Quiero hacer un pedido de Cremería y Lácteos en Abarrotes y Cremería Libertad. ¿Qué productos tienen disponibles?" href="#" class="mt-6 inline-flex min-h-12 items-center justify-center rounded-xl bg-libertad-mint px-4 text-sm font-bold text-libertad-forest transition hover:bg-libertad-forest hover:text-white focus:outline-none focus:ring-4 focus:ring-libertad-green/20">Pedir esta categoría <span class="ml-2" aria-hidden="true">→</span></a>
+          </article>
+          <article class="group flex flex-col rounded-3xl border border-libertad-forest/10 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft sm:p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E6F3E8] text-3xl" aria-hidden="true">🥫</div>
+            <h3 class="mt-5 font-display text-xl font-extrabold text-libertad-forest">Abarrotes en General</h3><p class="mt-2 flex-1 text-sm leading-6 text-libertad-muted">Básicos de despensa, enlatados, semillas, especias y lo de cada día.</p>
+            <a data-wa data-message="¡Hola! Quiero hacer un pedido de Abarrotes en General en Abarrotes y Cremería Libertad. ¿Qué productos tienen disponibles?" href="#" class="mt-6 inline-flex min-h-12 items-center justify-center rounded-xl bg-libertad-mint px-4 text-sm font-bold text-libertad-forest transition hover:bg-libertad-forest hover:text-white focus:outline-none focus:ring-4 focus:ring-libertad-green/20">Pedir esta categoría <span class="ml-2" aria-hidden="true">→</span></a>
+          </article>
+          <article class="group flex flex-col rounded-3xl border border-libertad-forest/10 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft sm:p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EAF1F8] text-3xl" aria-hidden="true">🧽</div>
+            <h3 class="mt-5 font-display text-xl font-extrabold text-libertad-forest">Productos de Limpieza</h3><p class="mt-2 flex-1 text-sm leading-6 text-libertad-muted">Detergentes, desinfectantes, jabones y esenciales para cuidar tu hogar.</p>
+            <a data-wa data-message="¡Hola! Quiero hacer un pedido de Productos de Limpieza en Abarrotes y Cremería Libertad. ¿Qué productos tienen disponibles?" href="#" class="mt-6 inline-flex min-h-12 items-center justify-center rounded-xl bg-libertad-mint px-4 text-sm font-bold text-libertad-forest transition hover:bg-libertad-forest hover:text-white focus:outline-none focus:ring-4 focus:ring-libertad-green/20">Pedir esta categoría <span class="ml-2" aria-hidden="true">→</span></a>
+          </article>
+          <article class="group flex flex-col rounded-3xl border border-libertad-forest/10 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft sm:p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FCEAE5] text-3xl" aria-hidden="true">🍽️</div>
+            <h3 class="mt-5 font-display text-xl font-extrabold text-libertad-forest">Artículos Desechables</h3><p class="mt-2 flex-1 text-sm leading-6 text-libertad-muted">Platos, vasos, servilletas, bolsas y prácticos para compartir.</p>
+            <a data-wa data-message="¡Hola! Quiero hacer un pedido de Artículos Desechables en Abarrotes y Cremería Libertad. ¿Qué productos tienen disponibles?" href="#" class="mt-6 inline-flex min-h-12 items-center justify-center rounded-xl bg-libertad-mint px-4 text-sm font-bold text-libertad-forest transition hover:bg-libertad-forest hover:text-white focus:outline-none focus:ring-4 focus:ring-libertad-green/20">Pedir esta categoría <span class="ml-2" aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="scroll-mt-24 bg-libertad-mint/60 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[.16em] text-libertad-green">De aquí, para tu hogar</span>
+            <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight text-libertad-forest sm:text-4xl">La tienda de confianza de todos los días</h2>
+            <p class="mt-4 leading-7 text-libertad-muted">Nos gusta hacerte la vida más fácil. Encuentra productos para tu despensa y tu hogar, con atención amable y el trato cercano de siempre.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="rounded-3xl bg-white p-5 shadow-sm sm:p-6"><span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF3D7] text-2xl" aria-hidden="true">✨</span><h3 class="mt-4 font-display font-extrabold text-libertad-forest">Calidad para ti</h3><p class="mt-2 text-sm leading-6 text-libertad-muted">Cuidamos la selección de productos para tu familia.</p></div>
+            <div class="rounded-3xl bg-white p-5 shadow-sm sm:p-6"><span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-libertad-mint text-2xl" aria-hidden="true">💬</span><h3 class="mt-4 font-display font-extrabold text-libertad-forest">Atención rápida</h3><p class="mt-2 text-sm leading-6 text-libertad-muted">Pide por WhatsApp y resolvemos tus dudas directamente.</p></div>
+            <div class="rounded-3xl bg-white p-5 shadow-sm sm:p-6"><span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EAF1F8] text-2xl" aria-hidden="true">🛍️</span><h3 class="mt-4 font-display font-extrabold text-libertad-forest">Como te convenga</h3><p class="mt-2 text-sm leading-6 text-libertad-muted">Pregunta por entrega a domicilio o retiro en tienda.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="scroll-mt-24 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-libertad-forest px-6 py-9 text-white sm:px-10 sm:py-12 lg:grid-cols-[1.1fr_.9fr] lg:items-center lg:px-14">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[.16em] text-[#A8D9B9]">Estamos para atenderte</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">¿Qué ponemos en tu lista?</h2>
+          <p class="mt-4 max-w-xl leading-7 text-white/75">Escríbenos para consultar disponibilidad, hacer tu pedido y preguntar por las opciones de entrega o retiro.</p>
+          <a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden compartir disponibilidad y opciones de entrega?" href="#" class="mt-7 inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-libertad-gold px-7 font-extrabold text-libertad-forest transition hover:bg-[#F7C45F] focus:outline-none focus:ring-4 focus:ring-white/30">Escribir por WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="grid gap-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:grid-cols-2 sm:p-7">
+          <div><span class="text-xs font-bold uppercase tracking-[.14em] text-[#A8D9B9]">Horario de atención</span><p class="mt-2 font-semibold">Consulta disponibilidad</p><p class="mt-1 text-sm leading-6 text-white/70">Escríbenos por WhatsApp para confirmar el horario vigente.</p></div>
+          <div><span class="text-xs font-bold uppercase tracking-[.14em] text-[#A8D9B9]">Ubicación y entregas</span><p class="mt-2 font-semibold">Cerca de tu hogar</p><p class="mt-1 text-sm leading-6 text-white/70">Pregunta por nuestra dirección y las zonas de entrega disponibles.</p></div>
+          <div class="sm:col-span-2"><span class="text-xs font-bold uppercase tracking-[.14em] text-[#A8D9B9]">Contacto directo</span><a href="tel:+523365469012" class="mt-2 block font-semibold hover:underline">+52 33 6546 9012</a><p class="mt-1 text-sm text-white/70">Pedidos y consultas por llamada o WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-libertad-forest/10 bg-libertad-cream px-4 py-7 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <a href="#inicio" class="flex items-center gap-2 text-sm font-extrabold text-libertad-forest"><svg class="h-8 w-8" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="15" fill="#164E45"/><path d="M13 30.5c2.2-7.5 6.3-12.2 12.4-14.2 1.1 7.1-1.7 12.1-8.1 14.6 3.2.2 6.7-.7 10.4-2.9 2.4-1.4 4.7-3.6 6.9-6.7.1 7.3-3 12.4-9 15.1-5.4 2.4-10 .8-12.6-5.9Z" fill="#A8D9B9"/><circle cx="33.5" cy="14" r="3" fill="#F2B544"/></svg> Abarrotes y Cremería Libertad</a>
+      <p class="text-xs text-libertad-muted">© <span id="year"></span> Abarrotes y Cremería Libertad. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-4 text-sm font-semibold"><a class="text-libertad-forest hover:text-libertad-green" href="tel:+523365469012">Llamar</a><a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden ayudar?" href="#" class="text-libertad-forest hover:text-libertad-green">WhatsApp</a></div>
+    </div>
+  </footer>
+
+  <a data-wa data-message="¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden ayudar?" href="#" class="fixed bottom-4 right-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_rgba(0,0,0,.22)] transition hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30 sm:bottom-6 sm:right-6 sm:h-16 sm:w-16" aria-label="Pedir por WhatsApp">
+    <svg class="h-7 w-7 sm:h-8 sm:w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L.2 24l6.4-1.7a12 12 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.2 21.7a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.4c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.7 5.8 5.1c.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.7-.1 1.8-.8 2.1-1.5.3-.7.3-1.3.2-1.5s-.3-.2-.6-.4Z"/></svg>
+  </a>
+
+  <script>
+    (() => {
+      const phone = '523365469012';
+      document.querySelectorAll('[data-wa]').forEach((link) => {
+        const message = link.dataset.message || '¡Hola! Me gustaría hacer un pedido en Abarrotes y Cremería Libertad. ¿Me pueden ayudar?';
+        link.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuButton.addEventListener('click', () => {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!expanded));
+        menuButton.setAttribute('aria-label', expanded ? 'Abrir menú' : 'Cerrar menú');
+        mobileMenu.classList.toggle('hidden', expanded);
+      });
+      mobileMenu.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir menú');
+      }));
+    })();
+  </script>
+</body>
+</html>
+
